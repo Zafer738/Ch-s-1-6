@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1f1f1f; /* Dark background for a modern feel */
+    color: #ddd; /* Lighter text color for readability */
+}
+
+header {
+    background-color: #222; /* Darker shade for contrast */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Added subtle shadow */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px 25px;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #ff6ec7, #ff7eb3); /* Gradient for a vibrant look */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    background: linear-gradient(45deg, #ff7eb3, #ff6ec7); /* Switched gradient on hover */
+    transform: scale(1.1); /* Adds a subtle hover effect */
+}
+
+/* Page Title */
+h1 {
+    font-size: 3rem;
+    color: #ff6ec7; /* Stylish title color */
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+/* Section Styling */
+section {
+    padding: 40px;
+    margin: 40px auto;
+    background-color: #333;
+    border-radius: 10px;
+    max-width: 80%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #ff6ec7; /* Stylish heading color */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #bbb;
+}
+
+/* Key Info List */
+#key-info ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#key-info li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Button Styling */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px; /* Space under the button */
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff6ec7; /* Soft pink button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 50px; /* Circular button */
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #ff7eb3; /* Slightly darker on hover */
+    transform: scale(1.05); /* Slight scaling effect */
+}
+
+

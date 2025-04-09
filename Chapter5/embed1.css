@@ -1,0 +1,30 @@
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling to center content */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+/* Container for video */
+.video-container {
+  text-align: center;
+}
+
+/* Style video size */
+video {
+  max-width: 90vw;
+  max-height: 80vh;
+  border: 4px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}

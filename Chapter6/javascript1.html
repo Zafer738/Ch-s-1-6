@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Petrol Calculator</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      background-color: #000000; /* Black background */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      background-color: #ffffff; /* White box */
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      width: 320px;
+      border: 2px solid #0096c7;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #000000;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+      color: #000000;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 2px solid #cccccc;
+      border-radius: 6px;
+      background-color: #f9f9f9;
+      color: #000000;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus {
+      border-color: #0096c7;
+      outline: none;
+    }
+
+    button {
+      background-color: #0096c7;
+      color: #ffffff;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0077a8;
+    }
+
+    #totalCost {
+      margin-top: 20px;
+      font-size: 1.2em;
+      color: #333333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Petrol Cost Calculator</h1>
+
+    <!-- Petrol price per liter -->
+    <label for="costPerLiter">Cost per Liter (AED):</label>
+    <input type="number" id="costPerLiter" value="1.72" step="0.01" />
+
+    <!-- Liters purchased -->
+    <label for="liters">Liters Purchased:</label>
+    <input type="number" id="liters" value="0" />
+
+    <!-- Calculate button -->
+    <button onclick="calculateTotal()">Calculate Total</button>
+
+    <!-- Output result -->
+    <p id="totalCost">Total Cost: AED 0.00</p>
+  </div>
+
+  <script>
+    // Calculates total petrol cost
+    function calculateTotal() {
+      const costPerLiter = parseFloat(document.getElementById('costPerLiter').value);
+      const liters = parseFloat(document.getElementById('liters').value);
+      const total = costPerLiter * liters;
+      document.getElementById('totalCost').textContent = `Total Cost: AED ${total.toFixed(2)}`;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+    background-color: white;
+}
+
+div {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Style for div A */
+#A {
+    border: 3px solid purple;
+    box-shadow: 10px 10px 15px red;
+}
+
+/* Style for div B */
+#B {
+    border: 3px solid lime;
+    box-shadow: -10px -10px 15px black inset;
+}
+
+/* Style for div C */
+#C {
+    border-radius: 20px;
+    border: 5px solid orange;
+    box-shadow: 0 0 0 5px blue, 0 0 0 10px red, 0 0 0 15px green;
+}
+
+/* Style for div D */
+#D {
+    border: 3px solid brown;
+    text-shadow: 2px 2px 3px black;
+}
